@@ -2,36 +2,27 @@
 @import "_variables";
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap&subset=latin-ext");
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
+
+/*html {
+  box-sizing: border-box;
+}*/
 
 body {
   color: $black;
   background: $background;
   max-width: 100%;
   margin: 0px auto;
- 
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-.obrazek {
-  max-width: 100%;
-  max-height: 1080px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5rem;
 }
 .nav {
   display: flex;
@@ -41,11 +32,15 @@ body {
   background-color: rgb(173, 182, 173);
   font-family: "Poppins", sans-serif;
   &__logo {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 25px;
   }
-  &__homepage { color: rgb(206, 228, 233)}
+  &__homepage {
+    color: rgb(206, 228, 233);
+  }
   &__links {
     display: flex;
     width: 45%;
@@ -126,4 +121,170 @@ body {
     transform: translateX(0px);
   }
 }
+.main__image {
+  max-width: 100%;
+  max-height: 1080px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5rem;
+}
 
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  &__imageContainer {
+    flex: 1 1 13rem;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__header {
+    padding: 1rem;
+    text-align: center;
+  }
+  &__description {
+    flex: 1 1 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    color: cornsilk;
+    padding: 10px 2rem;
+    background: rgb(99, 80, 80);
+    border: none;
+    border-radius: 7px;
+  }
+  p {
+    padding: 10px;
+  }
+}
+
+.education {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  &__imageContainer {
+    flex: 1 1 13rem;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__header {
+    padding: 1rem;
+    text-align: center;
+  }
+  &__description {
+    flex: 1 1 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    color: cornsilk;
+    padding: 10px 2rem;
+    background: rgb(99, 80, 80);
+    border: none;
+    border-radius: 7px;
+  }
+  p {
+    padding: 10px;
+  }
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  &__imageContainer {
+    flex: 1 1 13rem;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__header {
+    padding: 1rem;
+    text-align: center;
+  }
+  &__description {
+    flex: 1 1 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    color: cornsilk;
+    padding: 10px 2rem;
+    background: rgb(99, 80, 80);
+    border: none;
+    border-radius: 7px;
+  }
+  p {
+    padding: 10px;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  &__imageContainer {
+    flex: 1 1 13rem;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__header {
+    padding: 1rem;
+    text-align: center;
+  }
+  &__description {
+    flex: 1 1 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    color: cornsilk;
+    padding: 10px 2rem;
+    background: rgb(99, 80, 80);
+    border: none;
+    border-radius: 7px;
+  }
+  p {
+    padding: 10px;
+  }
+}
+
+.footer {
+  &__header {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    background: cyan;
+    padding: 2rem 2rem;
+  }
+  &__topmenu {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  }

@@ -1,70 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mariusz Flis - Homepage</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Mariusz Flis - Homepage</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <nav class="nav">
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <nav class="nav">
     <div class="nav__logo">
+      <div class="nav__clipart">
+        <img src="./assets/img/clipartfox_mini.png" alt="Small Fox">
+      </div>
+      <div class="nav__logoHeaders">
         <h6 class="nav__name">Mariusz Flis</h6>
         <h4 class="nav__homepage">Homepage</h4>
+      </div>
+
     </div>
     <ul class="nav__links">
-        <li class="nav__list">
-            <a class="nav__link" href="#">Home</a>
-        </li>
-        <li class="nav__list">
-            <a class="nav__link" href="#">About</a>
-        </li>
-        <li class="nav__list"> 
-            <a class="nav__link" href="#">Education</a>
-        </li>
-        <li class="nav__list">
-            <a class="nav__link" href="#">Work</a>
-        </li>
-        <li class="nav__list">
-            <a class="nav__link" href="#">Projects</a>
-        </li>
+      <li class="nav__list">
+        <a class="nav__link" href="#">Home</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="#">About</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="#">Education</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="#">Work</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="#">Projects</a>
+      </li>
     </ul>
     <div class="nav__burgerMenu">
-        <div class="nav__burgerLine nav__burgerLine1 "></div>
-        <div class="nav__burgerLine nav__burgerLine2 "></div>
-        <div class="nav__burgerLine nav__burgerLine3 "></div>
+      <div class="nav__burgerLine nav__burgerLine1 "></div>
+      <div class="nav__burgerLine nav__burgerLine2 "></div>
+      <div class="nav__burgerLine nav__burgerLine3 "></div>
     </div>
-</nav>
-<img class="obrazek" src="./assets/img/widoczek.jpg" alt="obrazek z białym domkiem"> 
-    
+  </nav>
+
+  <section class="mainImage">
+    <img class="main__image" src="./assets/img/widoczek.jpg" alt="obrazek z białym domkiem">
+  </section>
+
+  <section class="about">
+    <div class="about__imageContainer"> <img class="about__image" src="./assets/img/aboutme.jpg"
+        alt="Picture of website owner"></div>
+    <div class="about__description">
+      <h2 class="about__header">Hi there, few words about me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Consectetur distinctio illo nam in autem eos voluptatibus, quibusdam nostrum, quo modi a!</p>
+      <p>Quas ipsam tempore doloribus reprehenderit, sunt aut aliquam labore.</p>
+      <button class="about__button"> More info...</button>
+    </div>
+  </section>
+
+  <section class="education">
+    <div class="education__imageContainer"> <img class="education__image" src="./assets/img/education.jpg"
+        alt="Books wit apple on top"> </div>
+    <div class="education__description">
+      <h2 class="education__header">My education</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Sit modi vero maiores! Iure officia laudantium tenetur rerum praesentium labore sint?</p>
+      <p>Laboriosam tempore maiores veniam doloremque officia corrupti recusandae quod? Soluta!</p>
+      <button class="education__button"> More info...</button>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="work__imageContainer"> <img class="work__image" src="./assets/img/carpenter.jpg" alt="carpenter working"> </div>
+    <div class="work__description">
+      <h2 class="work__header">Where i worked</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Obcaecati non ratione atque eaque distinctio eos quidem
+        error nemo tempora impedit earum, deserunt odio, in cumque beatae, possimus tenetur totam consequatur sint autem
+        enim perferendis eveniet?</p>
+      <p>Labore, animi officiis possimus voluptatem distinctio harum consequatur eaque ducimus
+        reprehenderit totam quas voluptates quos?</p>
+      <button class="work__button"> More info...</button>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="projects__imageContainer"> <img class="projects__image" src="./assets/img/building.jpg"
+        alt="construction side,crane"> </div>
+    <div class="projects__description">
+      <h2 class="projects__header">Projects i worked on</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Nihil non fuga architecto eligendi voluptas iste recusandae reiciendis cupiditate tempora, rerum suscipit ea
+        sapiente!</p>
+      <p>Quibusdam porro ut ipsam debitis architecto delectus!</p>
+      <p>Officia perferendis obcaecati quod nobis cum nemo hic reiciendis blanditiis.</p>
+      <button class="projects__button"> More info...</button>
+    </div>
+  </section>
+  <footer class="footer">
+      <h4 class="footer__header" id="stopka">To jest moja pierwsza strona www ktora powstała na podstawie kursu
+        #WTF- Maćka Korsana oraz #devstyle.pl</h4>
+      <a class="footer__topmenu" href="#top"> Na górę </a>
+    </footer>
 
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
