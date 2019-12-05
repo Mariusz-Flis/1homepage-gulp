@@ -643,8 +643,7 @@ body {
 .footer__header {
   text-align: center;
   font-size: 20px;
-  font-style: italic;
-  background: cyan;
+  background: #adb6ad;
   padding: 2rem 2rem; }
 
 .footer__topmenu {
