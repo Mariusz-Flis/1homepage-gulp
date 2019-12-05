@@ -1,16 +1,129 @@
 @import "_normalize";
 @import "_variables";
-
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $black;
+  background: $background;
+  max-width: 100%;
+  margin: 0px auto;
+ 
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.obrazek {
+  max-width: 100%;
+  max-height: 1080px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(173, 182, 173);
+  font-family: "Poppins", sans-serif;
+  &__logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+  &__homepage { color: rgb(206, 228, 233)}
+  &__links {
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &__burgerMenu {
+    cursor: pointer;
+    display: none;
+  }
+  &__burgerLine {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transition: all 0, 3s ease-in;
+  }
+  @media screen and (min-width: 641px) {
+    &__links {
+      width: 65%;
+    }
+  }
+  @media screen and (max-width: 642px) {
+    body {
+      overflow-x: hidden;
+    }
+    &__links {
+      position: absolute;
+      height: 55vh;
+      top: 10vh;
+      background-color: rgb(214, 203, 210);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 75%;
+      transition: transform 0.5s ease-in;
+      transform: translateX(-120%);
+    }
+    &__list {
+      opacity: 0;
+    }
+    &__active {
+      transform: translateX(-17%);
+    }
+    &__burgerMenu {
+      display: block;
+    }
+    .toggle {
+      .nav__burgerLine1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .nav__burgerLine2 {
+        opacity: 0;
+      }
+      .nav__burgerLine3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
